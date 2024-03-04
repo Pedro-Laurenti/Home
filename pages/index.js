@@ -6,7 +6,7 @@ import StrokeDiv from '../components/StrokeDiv.js';
 function Home() {
     return (
         <div className='select-block'>
-            <noscript>V.1.2</noscript>
+            <noscript>V.1.3</noscript>
             <div className={styles['header1']}>
                 <img src='./1-logo.svg'></img>
                 <div>
