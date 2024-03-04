@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --B1: #0095A5;
+    --B2: #095F68;
+    --B3: #171E46;
+    --B4: #0B131A;
+
+    --Y1: #E8B100;
+    --G1: #008E2B;
+    --R1: #BC000A;
+
+    --BL1: #373737;
+    --BL2: #737373;
+    --BL3: #E7E7E7;
+    --BL4: #FEFEFE;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--BL1);
+    transition: 0.5s;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--BL4) !important;
+}
+
+/* FONT */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Maven Pro';
+}
+
+h1{
+    font-size: 32px;
+    font-weight: medium;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* VARIANTS */
+
+.select-block {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.active{
+    color: var(--B1)!important;
+    font-weight: 800;
+}
