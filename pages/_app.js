@@ -1,7 +1,8 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import '../styles/global.css'; // Importação dos estilos globais
+import '../styles/global.css';
+import Header from '../components/Header.js';
 
 class MyApp extends App     {
     render() {
@@ -10,12 +11,13 @@ class MyApp extends App     {
         return (
         <>
             <Head>
-                <title>Meu Aplicativo Next.js</title>
-                {/* Metatags, links para fontes, etc., podem ser adicionados aqui */}
+                <title>Therapies Love Kids</title>
+                <noscript>V.1.0</noscript>
             </Head>
-                {/* Componente que envolve todas as páginas */}
+
+            <Header />
+
             <Component {...pageProps} />
-                {/* Componentes de layout comuns, como rodapé, barra de navegação, etc., podem ser adicionados aqui */}
         </>
         );
     }
