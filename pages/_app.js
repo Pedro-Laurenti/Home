@@ -12,7 +12,7 @@ class MyApp extends App     {
         <>
             <Head>
                 <title>Therapies Love Kids</title>
-                <noscript>V.1.0</noscript>
+                <noscript>V.1.1</noscript>
             </Head>
 
             <Header />

@@ -62,10 +62,9 @@ function Home() {
 
             <div className={styles['parte-3']}>
                 <h1>O que oferecemos?</h1>
-
-                    <div className={styles['wrapper-cells-pt-3']}>
-                        <Grid />
-                    </div>
+                <div className={styles['wrapper-cells-pt-3']}>
+                    <Grid />
+                </div>
                 
             </div>
         </>
