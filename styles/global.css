@@ -64,6 +64,11 @@ p{
 
 /* VARIANTS */
 
+#map{
+    height: 150px;
+    width: 150px;
+}
+
 .select-block {
     user-select: none;
     -moz-user-select: none;

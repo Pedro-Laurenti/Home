@@ -104,7 +104,8 @@
 .wrapper-cells-pt-3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 35px;
+    padding: 50px;
+    gap: 20px;
     width: 70%;
     max-height: 70vh;
     overflow: scroll;
@@ -151,4 +152,13 @@
 
 #cell-pt-3 h3{
     font-size: 20px;
+}
+
+
+.parte-4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
 }

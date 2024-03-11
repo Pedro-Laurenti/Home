@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '../components/Grids.js';
+import Maps from '../components/Maps.js';
 import Slider from '../components/Slider.js';
 import styles from '../styles/index.module.css';
 
@@ -64,6 +65,14 @@ function Home() {
                 <h1>O que oferecemos?</h1>
                 <div className={styles['wrapper-cells-pt-3']}>
                     <Grid />
+                </div>
+                
+            </div>
+
+            <div className={styles['parte-4']}>
+                <h1>Nossas unidades</h1>
+                <div className={styles['wrapper-cells-pt-4']}>
+                    <Maps />
                 </div>
                 
             </div>
