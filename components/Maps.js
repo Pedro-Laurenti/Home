@@ -1,21 +1,31 @@
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
+import React, { useEffect } from 'react';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
+const LeafletMap = () => {
+  useEffect(() => {
+    const center = [-23.55052, -46.633308];
+    const locations = [
+      { position: [-23.555, -46.65], name: 'Location 1' },
+      { position: [-23.56, -46.64], name: 'Location 2' },
+      { position: [-23.57, -46.63], name: 'Location 3' },
+      { position: [-23.58, -46.62], name: 'Location 4' },
+    ];
 
-const Map = () => {
-    return (
-      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{height: 400, width: "100%"}}>
-        <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[51.505, -0.09]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-      </MapContainer>
-    )
-  }
-  
-  export default Map
+    const map = L.map('leaflet-map').setView(center, 12);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    locations.forEach(({ position, name }) => {
+      L.marker(position).addTo(map).bindPopup(name);
+    });
+  }, []);
+
+  return (
+    <div id="leaflet-map" style={{ height: '600px', width: '800px' }}></div>
+  );
+};
+
+export default LeafletMap;

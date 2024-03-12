@@ -4,7 +4,7 @@ import Head from 'next/head';
 import '../styles/global.css';
 import Header from '../components/Header.js';
 
-class MyApp extends App     {
+class MyApp extends App{
     render() {
         const { Component, pageProps } = this.props;
 
