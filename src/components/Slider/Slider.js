@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const SimpleSlider = ({ slides }) => {
-  const settings = {
+const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -12,17 +12,17 @@ const SimpleSlider = ({ slides }) => {
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 7000
-  };
+};
 
-  return (
+return (
     <Slider {...settings}>
-      {slides.map((slide, index) => (
+    {slides.map((slide, index) => (
         <div key={index}>
-          <div>{slide}</div>
+        <div>{slide}</div>
         </div>
-      ))}
+    ))}
     </Slider>
-  );
+);
 };
 
 export default SimpleSlider;

@@ -1,0 +1,36 @@
+@import "@styles/settings/_settings";
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+  height: 70px;
+
+  color: var(--BL4);
+
+  background-color: var(--B1);
+  border: 2px solid transparent;
+  border-radius: 1em;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid var(--B1);
+    color: var(--B1);
+    cursor: pointer;
+  }
+
+  & h3{
+    color: var(--BL4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+      color: var(--B1);
+    }
+  }
+}

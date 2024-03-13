@@ -27,6 +27,7 @@
     box-sizing: border-box;
     color: var(--BL1);
     transition: 0.5s;
+    text-decoration: none;
 }
 
 body{
@@ -46,13 +47,13 @@ h1{
 }
 
 h2{
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 h3{
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 
@@ -63,11 +64,6 @@ p{
 }
 
 /* VARIANTS */
-
-#map{
-    height: 150px;
-    width: 150px;
-}
 
 .select-block {
     user-select: none;
@@ -80,11 +76,6 @@ p{
 .active{
     color: var(--B1)!important;
     font-weight: 800;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: var(--B1)!important;
-    font-size: 50px !important;
 }
 
 .slick-dots li button:before {
