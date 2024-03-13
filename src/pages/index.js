@@ -11,7 +11,7 @@ import Accordion from '@components/Accordion';
 
 import styles from '@styles/Home.module.scss';
 
-const DEFAULT_CENTER = [38.907132, -77.036546]
+const DEFAULT_CENTER = [-50.907132, -77.036546]
 
 const slides = [
   <div className={styles['slider-cell']}>
@@ -51,8 +51,8 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Next.js Leaflet Starter</title>
-        <meta name="description" content="Create mapping apps with Next.js Leaflet Starter" />
+        <title>Therapies Love Kids</title>
+        <meta name="description" content="Therapies Love Kids" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
