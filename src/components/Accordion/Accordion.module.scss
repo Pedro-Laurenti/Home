@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & .accordion {
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100%;
+    }
 }
 
 /* Core styles/functionality */
@@ -10,64 +16,75 @@
     position: absolute;
     opacity: 0;
     z-index: -1;
-}
-.tab__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.35s;
-}
-.tab input:checked ~ .tab__content {
-    max-height: 50rem;
+
+    &:checked ~ .tab__content{
+        max-height: 500px;
+        overflow-y: scroll;
+        border: 2px solid var(--B1);
+        border-radius:15px;
+    }
+
+    &:checked + .tab__label::after {
+        transform: rotate(270deg);
+        margin-right: 5px;
+    }
+
+    &:checked + .tab__label{
+        background: var(--B1);
+        color: var(--BL3);
+    }
+
+    &:not(:checked) + .tab__label:hover::after {
+        animation: bounce .5s infinite;
+    }
 }
 
 /* Visual styles */
-.accordion {
-    color: var(--B1);
-    border: 2px solid;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    width: 100%;
-}
-.tab__label,
-.tab__close {
-    display: flex;
-    color: white;
-    background: var(--B1);
-    cursor: pointer;
-}
+
 .tab__label {
+    border-radius: 15px;
+    display: flex;
+    color: var(--BL2);
+    background: var(--BL3);
+    cursor: pointer;
     justify-content: space-between;
     padding: 1rem;
+    border: 2px solid var(--BL4);
+
+    &:hover{
+        background: var(--BL4);
+        border: solid var(--BL3);
+        border-width: 2px;
+    }
+
+    &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transform: rotate(90deg);
+        transition: all 0.35s;
+    }
 }
-.tab__label::after {
-    content: "\276F";
-    width: 1em;
-    height: 1em;
-    text-align: center;
-    transform: rotate(90deg);
+
+.tab__content{
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.35s;
-}
-.tab input:checked + .tab__label::after {
-    transform: rotate(270deg);
-}
-.tab__content p {
-    margin: 0;
-    padding: 1rem;
-    text-align: justify;
-}
-.tab__close {
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-}
-.accordion--radio {
-    --theme: var(--secondary);
+
+    & p {
+        margin: 0;
+        padding: 1rem;
+        text-align: justify;
+    }
+    & ul{
+        margin: 0 50px;
+        padding: 1rem;
+        text-align: justify;
+    }
 }
 
 /* Arrow animation */
-.tab input:not(:checked) + .tab__label:hover::after {
-    animation: bounce .5s infinite;
-}
 @keyframes bounce {
     25% {
         transform: rotate(90deg) translate(.25rem);

@@ -11,7 +11,13 @@ import Accordion from '@components/Accordion';
 
 import styles from '@styles/Home.module.scss';
 
-const DEFAULT_CENTER = [-50.907132, -77.036546]
+const Center = [-16.082582161967835, -48.57036268144211]
+const Marker1 = [-16.32624186589265, -48.95399414059945]
+const Marker2 = [-16.326484291107626, -48.93804352814849]
+const Marker3 = [-16.408290981950234, -49.217718345807526]
+const Marker4 = [-15.715403578121949, -49.32930504699492]
+const Marker5 = [-15.849428385464458, -48.03904422994031]
+const Marker6 = [-15.849428385464458, -48.03904422994031]
 
 const slides = [
   <div className={styles['slider-cell']}>
@@ -100,14 +106,34 @@ export default function Home() {
       <Section>
         <Container>
           <h1>Nossas unidades</h1>
-          <Map className={styles.homeMap} width="800" height="400" center={DEFAULT_CENTER} zoom={12}>
+          <Map className={styles.homeMap} width="800" height="400" center={Center} zoom={10}>
             {({ TileLayer, Marker, Popup }) => (
               <>
                 <TileLayer
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+                  
                 />
-                <Marker position={DEFAULT_CENTER}>
+                <Marker position={Marker1}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+                <Marker position={Marker2}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+                <Marker position={Marker3}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+                <Marker position={Marker4}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+                <Marker position={Marker5}>
                   <Popup>
                     A pretty CSS3 popup. <br /> Easily customizable.
                   </Popup>

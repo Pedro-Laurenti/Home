@@ -1,3 +1,28 @@
+.header{
+  width: 100vw;
+  background-color: var(--BL4);
+}
+
+header.transparentHeader {
+  position: fixed !important;
+  z-index: 5000;
+  background-color: var(--BL4-T);
+  backdrop-filter: blur(5px);
+
+  & .header1{
+    height: 80px;
+
+    & img{
+      width: 120px;
+    }
+
+    & button{
+      height: 60px;
+      width: 200px;
+    }
+  }
+}
+
 .header1{
   display: flex;
   flex-direction: row;

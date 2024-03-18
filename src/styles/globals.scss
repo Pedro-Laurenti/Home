@@ -18,7 +18,7 @@
 
     /* TRANSPARENCY */
 
-    --BL4-T: #fefefe7a;
+    --BL4-T: #fefefe39;
 }
 
 *{
@@ -47,13 +47,13 @@ h1{
 }
 
 h2{
-    font-size: 2vw;
+    font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 h3{
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -92,7 +92,8 @@ p{
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--BL3);
+    background: var(--BL4);
+    margin: 10px 0;
 }
 
 ::-webkit-scrollbar-thumb {
