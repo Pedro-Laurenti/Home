@@ -1,8 +1,12 @@
 .section {
   margin: 0 0 150px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (min-width: 720px) {
-    margin: 0 0 150px 0;
-  }
+
+  // @media (min-width: 720px) {
+  //   margin: 0 0 150px 0;
+  // }
 }

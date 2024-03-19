@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Link , Element } from "react-scroll";
 
 import Layout from '@components/Layout';
 import Section from '@components/Section';
@@ -11,13 +12,13 @@ import Accordion from '@components/Accordion';
 
 import styles from '@styles/Home.module.scss';
 
-const Center = [-16.082582161967835, -48.57036268144211]
+const Center = [-15.831363931968374, -48.613426638044366]
 const Marker1 = [-16.32624186589265, -48.95399414059945]
 const Marker2 = [-16.326484291107626, -48.93804352814849]
 const Marker3 = [-16.408290981950234, -49.217718345807526]
 const Marker4 = [-15.715403578121949, -49.32930504699492]
 const Marker5 = [-15.849428385464458, -48.03904422994031]
-const Marker6 = [-15.849428385464458, -48.03904422994031]
+const Marker6 = [-15.326978438580792, -49.13540008084957]
 
 const slides = [
   <div className={styles['slider-cell']}>
@@ -68,22 +69,28 @@ export default function Home() {
               <h3>Clínica de Reabilitação Neurológica</h3>
               <img src='./2-letter-logo.svg' draggable="false"></img>
               <h2>Amor superando limites</h2>
-              <Button>Saiba mais</Button>
+              <Link
+                activeClass="active"
+                to="saiba-mais"
+                smooth={true}
+                offset={-250}
+                duration={500}
+              ><Button>Saiba mais</Button></Link>
           </div>
           <div className={styles.imgParte1}></div>
         </div>
       </Section>
 
-      <Section>
-        <Container>
-          <h1>Especialidades Terapêuticas</h1>
-          <div className={styles.parte2}>
-          <div className={styles.sliderWrapper}>
-              <Slider slides={slides}/>
-          </div>
-          </div>
-        </Container>
-      </Section>
+      <Element id="saiba-mais">
+        <Section>
+          <Container className={styles.parte2}>
+            <h1>Especialidades Terapêuticas</h1>
+            <div className={styles.sliderWrapper}>
+                <Slider slides={slides}/>
+            </div>
+          </Container>
+        </Section>
+      </Element>
 
       <Section>
         <Container>
@@ -104,9 +111,14 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Container>
+        <Container className={styles.homeMap}>
           <h1>Nossas unidades</h1>
-          <Map className={styles.homeMap} width="800" height="400" center={Center} zoom={10}>
+          <Map
+          center={Center}
+          zoom={9}
+          scrollWheelZoom={false}
+          
+          >
             {({ TileLayer, Marker, Popup }) => (
               <>
                 <TileLayer
@@ -115,27 +127,32 @@ export default function Home() {
                 />
                 <Marker position={Marker1}>
                   <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    Unidade Sede e Transdisciplinar (Centro)
                   </Popup>
                 </Marker>
                 <Marker position={Marker2}>
                   <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    Unidade Multidisciplinar (Jundiai)
                   </Popup>
                 </Marker>
                 <Marker position={Marker3}>
                   <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    Unidade Nerópolis
                   </Popup>
                 </Marker>
                 <Marker position={Marker4}>
                   <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    Unidade Jaraguá
                   </Popup>
                 </Marker>
                 <Marker position={Marker5}>
                   <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    Unidade Taguatinga
+                  </Popup>
+                </Marker>
+                <Marker position={Marker6}>
+                  <Popup>
+                    Unidade Goianésia
                   </Popup>
                 </Marker>
               </>

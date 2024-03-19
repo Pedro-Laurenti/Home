@@ -1,82 +1,56 @@
 @import "@styles/settings/_settings";
 
-.footer {
-  width: 100%;
-  color: white;
-  background-color: black;
-  padding: 1.2em 0;
-
-  a {
-    color: inherit;
-  }
-
-  p {
-
-    margin: 0 0 .5em;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-  }
-}
-
-.footerContainer {
+.footer{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin-bottom: 0.4em;
+  align-items: center;
+  width: 100%;
 
-  @media (max-width: 720px) {
-    flex-wrap: wrap;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.footerLinks {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0 2em;
-
-  @media (max-width: 720px) {
+  & .footPt1 {
+    background: linear-gradient(135deg, #171E46 0%, #3948A1 100%);
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+    align-items: center;
+    justify-items: center;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-  }
 
-  li {
-    margin: 0 0.8em;
-
-    &:first-child {
-      margin-left: 0;
+    & .footIcons{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 25px;
+      
+      & a{
+        color: aliceblue !important;
+        
+        &:hover{
+          color: var(--BL2) !important;
+          transition: 0.2s !important;
+        }
+      }
     }
+    & .footPages{
+      & h2{
+        color: var(--B1);
+        margin-bottom: 5px;
+      }
 
-    &:last-child {
-      margin-right: 0;
+      & ul h3{
+        margin: 2px 0 0 -20px;
+        color: var(--BL4);
+
+        &:hover{
+          color: var(--BL2);
+        }
+      }
     }
   }
 
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    svg {
-      margin-right: 0.4em;
-    }
+  & .footPt2{
+    background-color: var(--B4);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
   }
-}
 
-.footerLegal {
-  a {
-    text-decoration: underline;
-  }
 }

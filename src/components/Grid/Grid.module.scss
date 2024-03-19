@@ -1,7 +1,7 @@
 .cellPt3{
     border-radius: 15px;
     height: 320px;
-    width: 250px;
+    width: 100%;
     padding: 10px;
     text-align: center;
     background-color: #ffffff;
@@ -10,25 +10,25 @@
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
-}
 
-.cellPt3:hover{
-    box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.3);
-}
+    & h3{
+        font-size: 20px;
+    }
 
-.WrapperImgPt3{
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 100%;
-    margin-bottom: 25px;
-}
+    &:hover{
+        box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.3);
+    }
 
-.cellPt3 img{
-    width: 100%;
-    background-size: contain;
-}
+    & .WrapperImgPt3{
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin-bottom: 25px;
 
-.cellPt3 h3{
-    font-size: 20px;
+        & img{
+            width: 100%;
+            background-size: contain;
+        }
+    }
 }

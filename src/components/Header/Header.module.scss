@@ -1,6 +1,84 @@
 .header{
-  width: 100vw;
+  width: 100%;
   background-color: var(--BL4);
+
+  .iconMobile {
+    display: none;
+
+    svg{
+      width: 50px !important;
+      height: 40px;
+      fill: var(--B1);
+    }
+
+    &.active{
+      rotate: 90deg;
+
+      svg{
+        fill: var(--B2);
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    gap: 30px;
+    padding: 30px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .header1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    
+    img{
+      width: 150px;
+    }
+
+    .menuDesktop{
+      display: flex;
+      width: 40%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      a h3:hover{
+        color: var(--B1)!important;
+        cursor: pointer;
+      }
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .menuDesktop {
+      display: none; // Esconda o menu desktop em telas pequenas
+    }
+
+    .iconMobile {
+      display: block; // Exiba o ícone de sanduíche em telas pequenas
+      cursor: pointer;
+    }
+
+    .mobileMenu {
+      position: absolute;
+      display: flex;
+    }
+  }
 }
 
 header.transparentHeader {
@@ -12,6 +90,10 @@ header.transparentHeader {
   & .header1{
     height: 80px;
 
+    & div a h3{
+      color: var(--BL1);
+    }
+
     & img{
       width: 120px;
     }
@@ -21,30 +103,4 @@ header.transparentHeader {
       width: 200px;
     }
   }
-}
-
-.header1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 100px;
-  height: 100px;
-  align-items: center;
-}
-
-.header1 div{
-  display: flex;
-  width: 50%;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header1 img{
-  width: 150px;
-}
-
-.header1 div a h3:hover{
-  color: var(--B1)!important;
-  cursor: pointer;
 }

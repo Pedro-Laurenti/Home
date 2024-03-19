@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import styles from './Slider.module.scss';
+
 const SimpleSlider = ({ slides }) => {
 const settings = {
     dots: true,
@@ -15,12 +17,12 @@ const settings = {
 };
 
 return (
-    <Slider {...settings}>
-    {slides.map((slide, index) => (
-        <div key={index}>
-        <div>{slide}</div>
-        </div>
-    ))}
+    <Slider {...settings} className={styles.slider1}>
+        {slides.map((slide, index) => (
+            <div key={index}>
+                <div>{slide}</div>
+            </div>
+        ))}
     </Slider>
 );
 };

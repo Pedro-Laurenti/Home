@@ -1,12 +1,8 @@
 .container {
   width: 80%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
-
-  @media (max-width: 720px) {
-    // padding: 0 1em;
-  }
 
   h1{
     margin-bottom: 85px;
