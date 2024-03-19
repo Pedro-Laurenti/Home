@@ -35,7 +35,6 @@ const Header = () => {
         <Link href="/">
           <img src='./1-logo.svg' draggable="false" />
         </Link>
-        
         <div className={`${styles.iconMobile} ${isMenuOpen ? styles.active : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <FaBars />
         </div>
@@ -45,7 +44,6 @@ const Header = () => {
             <Button>Fale conosco</Button>
         </div>
       </div>
-      {/* Renderize o menu sanduíche quando estiver aberto */}
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <Link href="/"><h3>Início</h3></Link>

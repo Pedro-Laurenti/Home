@@ -1,6 +1,7 @@
 .header{
   width: 100%;
   background-color: var(--BL4);
+  position: relative;
 
   .iconMobile {
     display: none;
@@ -29,7 +30,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 40%;
+    width: 50%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -41,6 +42,7 @@
     height: 100px;
     align-items: center;
     position: relative;
+    
     
     img{
       width: 150px;
@@ -76,13 +78,14 @@
 
     .mobileMenu {
       position: absolute;
+      z-index: 800;
       display: flex;
     }
   }
 }
 
 header.transparentHeader {
-  position: fixed !important;
+  position: fixed;
   z-index: 5000;
   background-color: var(--BL4-T);
   backdrop-filter: blur(5px);
