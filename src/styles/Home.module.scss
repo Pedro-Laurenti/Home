@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: 1100px) {
+    justify-content: center;
+  }
+
   & .imgParte1{
     background-image: url(./img/3-img-parte-1.png);
     background-attachment: fixed;
@@ -27,6 +31,17 @@
     background-color: var(--BL4-T);
     border-radius: 15px;
     backdrop-filter: blur(5px);
+
+    @media (max-width: 1100px) {
+      margin: 0;
+      padding: 5px;
+      text-align: center;
+      
+      .btnSaiba{
+        width: 80%;
+        height: 50px;
+      }
+    }
   
     & img{
       max-width: 75%;
@@ -51,7 +66,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
 
     & .slider-cell{
       display: grid;
@@ -63,7 +78,7 @@
       border-radius: 15px;
       min-height: 550px;
       margin: 0 15px;
-      padding: 15px 50px;
+      padding: 15px;
 
       & img{
         height: 50%;
@@ -76,7 +91,7 @@
 
       & p{
         color: var(--BL2);
-        text-align: justify;
+        text-align: left;
       }
     }
   }
@@ -99,6 +114,12 @@
     max-height: 70vh;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    @media (max-width: 1100px) {
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding: 5px;
+    }
   }
 }
 

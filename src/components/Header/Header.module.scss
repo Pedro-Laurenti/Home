@@ -42,6 +42,10 @@
     height: 100px;
     align-items: center;
     position: relative;
+
+    @media (max-width: 500px) {
+      padding: 0 20px;
+    }
     
     
     img{

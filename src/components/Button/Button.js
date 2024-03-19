@@ -16,13 +16,13 @@ const Button = ({children, href, className, ...rest}) => {
   if (href) {
     if ( href.startsWith('/') ) {
       return (
-        <Link href={href} {...buttonProps}>
+        <Link href={href} {...buttonProps} className={styles.buttonWrapper}>
           <h3>{children}</h3>
         </Link>
       );
     }
     return (
-      <a href={href} {...buttonProps}>
+      <a href={href} {...buttonProps} className={styles.buttonWrapper}>
         <h3>{children}</h3>
       </a>
     );
@@ -30,7 +30,7 @@ const Button = ({children, href, className, ...rest}) => {
 
   return (
 
-    <button {...buttonProps}>
+    <button {...buttonProps} className={styles.buttonWrapper}>
       <h3>{children}</h3>
     </button>
   );

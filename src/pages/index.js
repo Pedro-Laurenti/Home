@@ -75,6 +75,7 @@ export default function Home() {
                 smooth={true}
                 offset={-250}
                 duration={500}
+                className={styles.btnSaiba}
               ><Button>Saiba mais</Button></Link>
           </div>
           <div className={styles.imgParte1}></div>
