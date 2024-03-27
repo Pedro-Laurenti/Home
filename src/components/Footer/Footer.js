@@ -29,14 +29,15 @@ const Footer = ({ ...rest }) => {
           <ul>
             <Link href="/"><h3>Início</h3></Link>
             <Link href="/blog"><h3>Blog</h3></Link>
+            
           </ul>
         </div>
 
         <div className={styles.footPages}>
           <h2>Institucional</h2>        
           <ul>
+            <Link href="/"><h3>Vagas</h3></Link>
             <Link href="/"><h3>Política de privacidade</h3></Link>
-            <Link href=""><h3>Trabalhe conosco</h3></Link>
           </ul>
         </div>
 

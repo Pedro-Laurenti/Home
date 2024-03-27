@@ -6,15 +6,15 @@ const [currentColorIndex, setCurrentColorIndex] = useState(0);
 const colors = ['#BC000A', '#E8B100', '#0095A5', '#008E2B'];
 
 const elements = [
-    { title: 'Terapia Intensiva com Protocolo PediaSuit', imageSrc: '' },
+    { title: 'Terapia Intensiva com Protocolo PediaSuit', imageSrc: '4-fig-oferecemos.jpg' },
     { title: 'Fisioterapia com protocolo Bobath', imageSrc: '7-fig-oferecemos.jpg' },
     { title: 'Fonoaudiologia', imageSrc: '5-fig-oferecemos.jpg' },
     { title: 'Musicoterapia', imageSrc: '6-fig-oferecemos.jpg' },
-    { title: 'Psicomotricidade', imageSrc: '7-fig-oferecemos.jpg' },
-    { title: 'Terapia Ocupacional', imageSrc: '7-fig-oferecemos.jpg' },
-    { title: 'Neuropsicopedagogia', imageSrc: '7-fig-oferecemos.jpg' },
-    { title: 'Psicologia Infantil', imageSrc: '7-fig-oferecemos.jpg' },
-    { title: 'Psicoterapia ABA', imageSrc: '7-fig-oferecemos.jpg' }
+    { title: 'Psicomotricidade', imageSrc: '8-fig-oferecemos.jpg' },
+    { title: 'Terapia Ocupacional', imageSrc: '9-fig-oferecemos.jpg' },
+    { title: 'Neuropsicopedagogia', imageSrc: '10-fig-oferecemos.jpg' },
+    { title: 'Psicologia Infantil', imageSrc: '11-fig-oferecemos.jpg' },
+    { title: 'Psicoterapia ABA', imageSrc: '12-fig-oferecemos.jpg' }
 ];
 
 return (

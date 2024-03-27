@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { useState,useEffect } from 'react'; // Importe useState ao invés de useEffect
+import { useState,useEffect } from 'react';
+import ModalButton from '@components/ModalButton';
 
 import { FaBars } from 'react-icons/fa';
 
-import Button from '@components/Button';
 import StrokeHeader from '@components/StrokeHeader';
 
 import styles from './Header.module.scss';
@@ -27,7 +27,7 @@ const Header = () => {
     };
   }, []);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Adicione estado para controlar se o menu está aberto
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -41,14 +41,16 @@ const Header = () => {
         <div className={styles.menuDesktop}>
             <Link href="/"><h3 className='active'>Início</h3></Link>
             <Link href="/"><h3>Blog</h3></Link>
-            <Button>Fale conosco</Button>
+            <Link href="/"><h3>Vagas</h3></Link>
+            <ModalButton/>
         </div>
       </div>
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <Link href="/"><h3>Início</h3></Link>
           <Link href="/"><h3>Blog</h3></Link>
-          <Button>Fale conosco</Button>
+          <Link href="/"><h3>Vagas</h3></Link>
+          <ModalButton/>
         </div>
       )}
       <StrokeHeader />

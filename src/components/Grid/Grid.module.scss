@@ -25,9 +25,13 @@
         border-radius: 100%;
         margin-bottom: 25px;
 
-        & img{
-            width: 100%;
+        & img {
+            height: 100%;
             background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-x: center;
+            background-position-y: center;
         }
 
         @media (max-width: 1100px) {

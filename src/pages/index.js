@@ -9,6 +9,7 @@ import Button from '@components/Button';
 import Slider from '@components/Slider';
 import Grid from '@components/Grid';
 import Accordion from '@components/Accordion';
+import ModalButton from '../components/ModalButton';
 
 import styles from '@styles/Home.module.scss';
 
