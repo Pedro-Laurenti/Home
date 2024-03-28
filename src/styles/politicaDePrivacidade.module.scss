@@ -1,0 +1,20 @@
+.PoliticaDePrivacidade{
+    width: 60%;
+    margin-top: 150px;
+
+    & p {
+        margin: 35px 0 ;
+    }
+
+    & h2{
+        margin: 35px 0;
+    }
+
+    & li{
+        margin: 10px 0;
+    }
+
+    @media (max-width: 1000px) {
+        width: 80%;
+    }
+}

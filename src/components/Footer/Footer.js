@@ -37,7 +37,7 @@ const Footer = ({ ...rest }) => {
           <h2>Institucional</h2>        
           <ul>
             <Link href="/"><h3>Vagas</h3></Link>
-            <Link href="/"><h3>Política de privacidade</h3></Link>
+            <Link href="/politica-de-privacidade"><h3>Política de privacidade</h3></Link>
           </ul>
         </div>
 
