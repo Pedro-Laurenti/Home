@@ -61,7 +61,7 @@ const ModalContato = ({ isOpen, onClose }) => {
         </div>
         <div className={styles.colunaDireita}>
           <div>
-            <Button><FaWhatsapp/> Fale Conosco</Button>
+            <Button href="https://wa.me/+558005917874"><FaWhatsapp/> Fale Conosco</Button>
             <section><FaPhone />0800 591 7874</section>
           </div>
         </div>

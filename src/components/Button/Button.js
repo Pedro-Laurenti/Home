@@ -22,7 +22,7 @@ const Button = ({children, href, className, ...rest}) => {
       );
     }
     return (
-      <a href={href} {...buttonProps} className={styles.buttonWrapper}>
+      <a href={href} target='_blank' {...buttonProps} className={styles.buttonWrapper}>
         <h3>{children}</h3>
       </a>
     );

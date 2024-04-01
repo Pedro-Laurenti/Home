@@ -18,10 +18,12 @@
     padding: 20px;
     border-radius: 10px;
     min-width: 80%;
+    height: 85vh;
     
     & .btnFechar{
         fill: var(--BL4) ;
-        right: 25px;
+        top: 25px;
+        right: 35px;
         position: inherit;
 
         @media (max-width: 1000px) {
@@ -46,7 +48,7 @@
         }
 
         & .colunaEsquerda{
-            max-height: 40vh;
+            max-height: 80vh;
             overflow-y: scroll;
             overflow-x: hidden;
 
