@@ -1,9 +1,10 @@
 .cellPt3{
     border-radius: 15px;
     width: 100%;
+    min-height: 400px;
     padding: 10px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: var(--BL4);
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 1fr;
@@ -11,7 +12,8 @@
     justify-items: center;
 
     & h3{
-        font-size: 20px;
+        font-size: 25px;
+        color: var(--B1);
     }
 
     &:hover{
@@ -20,10 +22,9 @@
 
     & .WrapperImgPt3{
         aspect-ratio: 1 / 1;
-        height: 200px;
+        height: 300px;
         overflow: hidden;
         border-radius: 100%;
-        margin-bottom: 25px;
 
         & img {
             height: 100%;

@@ -40,7 +40,7 @@
 
     & .columns{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0.5fr;
         gap: 50px;
 
         @media (max-width: 1000px) {

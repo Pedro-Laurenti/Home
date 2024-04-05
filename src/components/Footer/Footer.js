@@ -19,7 +19,7 @@ const Footer = ({ ...rest }) => {
           <div className={styles.footIcons}>
             <a target="_blank" href='https://www.youtube.com/channel/UCszsVqsZ-vLzzaeyiDqgz_w'><FaYoutube /></a>
             <a target="_blank" href='https://twitter.com/therapieslovekd'><FaTwitter /></a>
-            <a target="_blank" href='https://zetachain.claim-airdrop.io'><FaTiktok /></a>
+            <a target="_blank" href='https://www.tiktok.com/@therapieslovekids'><FaTiktok /></a>
             <a target="_blank" href='https://www.instagram.com/therapieslovekids/'><FaInstagram /></a>
           </div>
         </div>

@@ -22,13 +22,13 @@ const ModalContato = ({ isOpen, onClose }) => {
           <h2>E-mail e endereços</h2>
           <div classname={styles.cellColumn}>
             <h3><b>Anápolis, Sede (Centro):</b></h3>
-            <p>sede@therapieslovekids.com.br</p>
+            <p>anapolis@therapieslovekids.com.br</p>
             <p>R. Primeiro de Maio - Centro, Anápolis - GO, 75020-050</p>
           </div>
 
           <div classname={styles.cellColumn}>
             <h3><b>Anápolis, Jundiaí:</b></h3>
-            <p>anapolis@therapieslovekids.com.br</p>
+            <p>anapolis2@therapieslovekids.com.br</p>
             <p>R. José Neto Paranhos - Jundiaí, Anápolis - GO, 75110-750</p>
           </div>
 

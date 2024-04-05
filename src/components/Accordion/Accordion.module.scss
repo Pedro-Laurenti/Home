@@ -21,7 +21,7 @@
     z-index: -1;
 
     &:checked ~ .tab__content{
-        max-height: 500px;
+        max-height: 1500px;
         overflow-y: scroll;
         border: 2px solid var(--B1);
         border-radius:15px;
@@ -53,6 +53,7 @@
     justify-content: space-between;
     padding: 1rem;
     border: 2px solid var(--BL4);
+    font-weight: 600;
 
     &:hover{
         background: var(--BL4);
@@ -79,6 +80,7 @@
         margin: 0;
         padding: 1rem;
         text-align: justify;
+        text-indent: 50px;
     }
     & ul{
         margin: 0 50px;
