@@ -112,8 +112,8 @@ export default function Home() {
           <h1>Perguntas frequentes</h1>
           <Accordion />
         </Container>
-
-        <NextLink href="/sobre">
+        
+        <NextLink href="/sobre" className={styles.btnEntenta}>
           <Button>
               Entenda com o que trabalhamos
           </Button>

@@ -15,7 +15,7 @@ const Tab = () => {
         return (
           <div className={styles.tabContent}>
             <li>Vivacom Planos de saúde</li>
-            <li>SulAmérica saúde</li>
+            <li>Sul América saúde</li>
             <li>Cassi</li>
             <li>BAAN</li>
             <li>Amil</li>
@@ -28,9 +28,9 @@ const Tab = () => {
         return (
           <div className={styles.tabContent}>
             <li>Unimed</li>
-            <li>proasa</li>
-            <li>vivacom</li>
-            <li>ipasgo</li>
+            <li>Proasa</li>
+            <li>Vivacom</li>
+            <li>Ipasgo</li>
           </div>
         );
       case 3:
