@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Parallax } from 'react-parallax';
+
 
 import { FaYoutube } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
@@ -7,7 +9,10 @@ import { FaInstagram } from 'react-icons/fa';
 
 import styles from './Footer.module.scss';
 
+
+
 const Footer = ({ ...rest }) => {
+
   return (
     <footer className={styles.footer} {...rest}>
       <div className={styles.footPt1}>
@@ -29,6 +34,7 @@ const Footer = ({ ...rest }) => {
           <ul>
             <Link href="/"><h3>Início</h3></Link>
             <Link href="/blog"><h3>Blog</h3></Link>
+            <Link href="/sobre"><h3>Sobre nós</h3></Link>
             
           </ul>
         </div>

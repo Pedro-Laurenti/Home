@@ -5,34 +5,54 @@ import styles from './Tab.module.scss'; // Importando os estilos
 const Tab = () => {
   const [activeTab, setActiveTab] = useState(1);
 
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+  };
+
   const renderTabContent = () => {
     switch (activeTab) {
       case 1:
         return (
-          <div>
-            <h2>Conteúdo da Aba 1</h2>
-            <p>Este é o conteúdo da aba 1.</p>
+          <div className={styles.tabContent}>
+            <li>Vivacom Planos de saúde</li>
+            <li>SulAmérica saúde</li>
+            <li>Cassi</li>
+            <li>BAAN</li>
+            <li>Amil</li>
+            <li>CAESAN</li>
+            <li>Ipasgo</li>
+            <li>Proasa</li>
           </div>
         );
       case 2:
         return (
-          <div>
-            <h2>Conteúdo da Aba 2</h2>
-            <p>Este é o conteúdo da aba 2.</p>
+          <div className={styles.tabContent}>
+            <li>Unimed</li>
+            <li>proasa</li>
+            <li>vivacom</li>
+            <li>ipasgo</li>
           </div>
         );
       case 3:
         return (
-          <div>
-            <h2>Conteúdo da Aba 3</h2>
-            <p>Este é o conteúdo da aba 3.</p>
+          <div className={styles.tabContent}>
+            <li>Unimed</li>
+            <li>Ipasgo (somente por liminar)</li>
+            <li>Caesan</li>
           </div>
         );
       case 4:
         return (
-          <div>
-            <h2>Conteúdo da Aba 4</h2>
-            <p>Este é o conteúdo da aba 4.</p>
+          <div className={styles.tabContent}>
+            <li>Unimed</li>
+            <li>Evida</li>
+            <li>Amil</li>
+            <li>CAESAN</li>
+            <li>Life</li>
+            <li>Amhp</li>
+            <li>Asmepro</li>
+            <li>Amai</li>
+            <li>Proasa</li>
           </div>
         );
       default:
@@ -43,12 +63,13 @@ const Tab = () => {
   return (
     <div className={styles.tabsContainer}>
       <div className={styles.tabs}>
-        <button className={activeTab === 1 ? styles.activeTab : ''} onClick={() => setActiveTab(1)}>Aba 1</button>
-        <button className={activeTab === 2 ? styles.activeTab : ''} onClick={() => setActiveTab(2)}>Aba 2</button>
-        <button className={activeTab === 3 ? styles.activeTab : ''} onClick={() => setActiveTab(3)}>Aba 3</button>
-        <button className={activeTab === 4 ? styles.activeTab : ''} onClick={() => setActiveTab(4)}>Aba 4</button>
+        <button className={activeTab === 1 ? `${styles.tab} ${styles.active}` : styles.tab} onClick={() => handleTabClick(1)}>Anápolis</button>
+        <button className={activeTab === 2 ? `${styles.tab} ${styles.active}` : styles.tab} onClick={() => handleTabClick(2)}>Jaraguá</button>
+        <button className={activeTab === 3 ? `${styles.tab} ${styles.active}` : styles.tab} onClick={() => handleTabClick(3)}>Nerópolis</button>
+        <button className={activeTab === 4 ? `${styles.tab} ${styles.active}` : styles.tab} onClick={() => handleTabClick(4)}>Taguatinga - DF</button>
       </div>
       <div>
+        {/* Renderizar o conteúdo da aba ativa */}
         {renderTabContent()}
       </div>
     </div>

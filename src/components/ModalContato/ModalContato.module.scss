@@ -15,7 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     min-width: 80%;
     height: 85vh;
@@ -42,22 +42,20 @@
         display: grid;
         grid-template-columns: 1fr 0.5fr;
         gap: 50px;
+        height: 100%;
 
         @media (max-width: 1000px) {
             grid-template-columns: 1fr;
         }
 
         & .colunaEsquerda{
-            max-height: 80vh;
+            max-height: 100%;
             overflow-y: scroll;
             overflow-x: hidden;
-
-            & h2{
-                margin-bottom: 25px;
-            }
-
+            padding: 20px;
+            
             & div{
-                margin: 50px 0;
+                margin: 20px 0;
 
                 & h3{
                     margin: 5px 0;

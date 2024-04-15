@@ -59,6 +59,10 @@
       justify-content: space-between;
       align-items: center;
 
+      .pageActive{
+        color: var(--B1);
+      }
+
       a h3:hover{
         color: var(--B1)!important;
         cursor: pointer;

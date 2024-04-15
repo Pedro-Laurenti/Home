@@ -19,7 +19,6 @@ const ModalContato = ({ isOpen, onClose }) => {
 
       <div className={styles.columns}>
         <div className={styles.colunaEsquerda}>
-          <h2>E-mail e endereços</h2>
           <div classname={styles.cellColumn}>
             <h3><b>Anápolis, Sede (Centro):</b></h3>
             <p>anapolis@therapieslovekids.com.br</p>

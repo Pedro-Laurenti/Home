@@ -1,5 +1,9 @@
 .slider1{
-    width: 80%;
+    width: 90vw;
     margin: 0 !important;
     position: relative;
+
+    @media (max-width: 1000px) {
+        width: 98vw;
+    }
 }

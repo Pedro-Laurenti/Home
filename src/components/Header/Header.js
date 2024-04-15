@@ -1,14 +1,14 @@
+// components/Header.js
 import Link from 'next/link';
-import { useState,useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 import ModalButton from '@components/ModalButton';
-
 import { FaBars } from 'react-icons/fa';
-
 import StrokeHeader from '@components/StrokeHeader';
-
 import styles from './Header.module.scss';
 
 const Header = () => {
+  const { pathname } = useRouter(); // Use useRouter para obter o pathname
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,17 +39,23 @@ const Header = () => {
           <FaBars />
         </div>
         <div className={styles.menuDesktop}>
-            <Link href="/"><h3 className='active'>Início</h3></Link>
-            <Link href="/"><h3>Blog</h3></Link>
-            <Link href="/"><h3>Vagas</h3></Link>
-            <ModalButton/>
+          <Link href="/">
+            <h3 className={pathname === "/" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Início</h3>
+          </Link>
+          <Link href="/sobre">
+            <h3 className={pathname === "/sobre" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Sobre nós</h3>
+          </Link>
+          <ModalButton/>
         </div>
       </div>
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
-          <Link href="/"><h3>Início</h3></Link>
-          <Link href="/"><h3>Blog</h3></Link>
-          <Link href="/"><h3>Vagas</h3></Link>
+          <Link href="/">
+            <h3 className={pathname === "/" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Início</h3>
+          </Link>
+          <Link href="/sobre">
+            <h3 className={pathname === "/sobre" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Sobre nós</h3>
+          </Link>
           <ModalButton/>
         </div>
       )}
@@ -57,4 +63,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;
