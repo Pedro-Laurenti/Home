@@ -21,10 +21,12 @@ return (
     <>
     {elements.map((element, index) => (
         <div key={index} className={styles.cellPt3}>
-            <div className={styles.WrapperImgPt3} style={{ borderColor: colors[(currentColorIndex + index) % colors.length], border: `2px solid ${colors[(currentColorIndex + index) % colors.length]}`}} >
-                <img src={element.imageSrc} alt="a"/>
+            <div className={styles.ImgDad1} style={{ borderColor: colors[(currentColorIndex + index) % colors.length], border: `2px solid ${colors[(currentColorIndex + index) % colors.length]}`}} >
+                <div className={styles.WrapperImgPt3}>
+                    <img src={element.imageSrc} alt="a"/>
+                </div>
             </div>
-        <h3>{element.title}</h3>
+        <h3 style={{color: colors[(currentColorIndex + index) % colors.length]}}>{element.title}</h3>
         </div>
     ))}
     </>

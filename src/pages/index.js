@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { Link , Element } from "react-scroll";
 
+import NextLink from 'next/link';
+
 import Layout from '@components/Layout';
 import Section from '@components/Section';
 import Container from '@components/Container';
@@ -78,7 +80,8 @@ export default function Home() {
                 className={styles.btnSaiba}
               ><Button>Saiba mais</Button></Link>
           </div>
-          <div className={styles.imgParte1}></div>
+          <div className={styles.imgParte1} style={{ backgroundImage: `url(./3-img-parte-1.png)` }}></div>
+          
         </div>
       </Section>
 
@@ -109,6 +112,13 @@ export default function Home() {
           <h1>Perguntas frequentes</h1>
           <Accordion />
         </Container>
+
+        <NextLink href="/sobre">
+          <Button>
+              Entenda com o que trabalhamos
+          </Button>
+        </NextLink>
+        
       </Section>
 
       <Section>

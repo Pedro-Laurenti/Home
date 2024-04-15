@@ -1,6 +1,6 @@
 /* PARTE 1 */
 
-.parte1{
+.subpage1{
     position: relative;
     height: 80vh;
     width: 100%;
@@ -9,8 +9,7 @@
     align-items: center;
     justify-content: center;
 
-    & .imgParte1{
-        background-image: url(./img/15-capa-cookies.jpg);
+    & .imgSubpage1{
         background-attachment: fixed;
         background-position: 0 20%;
         background-size: cover;
@@ -19,7 +18,7 @@
         width: 100%;
     }
 
-    & .contentParte1{
+    & .contentsubpage1{
         position: absolute;
         margin: 100px;
         width: 50%;
@@ -45,7 +44,7 @@
 
 /* PARTE 2 */
 
-.PoliticaDePrivacidade{
+.CorpoSubpagina{
     width: 60%;
 
     & p {
