@@ -11,7 +11,7 @@
 
     & .imgSubpage1{
         background-attachment: fixed;
-        background-position: 0 20%;
+        background-position: 50% 20%;
         background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
@@ -46,6 +46,8 @@
 
 .CorpoSubpagina{
     width: 60%;
+    margin-top: 100px;
+    text-align: justify;
 
     & p {
         margin: 35px 0 ;
@@ -55,8 +57,14 @@
         margin: 35px 0;
     }
 
+    & h4{
+        margin: 25px 0px;
+    }
+
     & li{
-        margin: 10px 0;
+        margin: 25px 0px 10px 50px;
+        line-height: 22px;
+
     }
 
     @media (max-width: 1000px) {

@@ -1,0 +1,31 @@
+/* styles/TabsContent.module.css */
+.tabsContainer {
+    font-family: Arial, sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tabs button:hover {
+    background-color: #ddd;
+  }
+  
+  .tabs button:focus {
+    outline: none;
+  }
+  
+  .tabs button.active {
+    background-color: #007bff;
+    color: white;
+  }

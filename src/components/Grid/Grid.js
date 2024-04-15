@@ -6,15 +6,15 @@ const [currentColorIndex, setCurrentColorIndex] = useState(0);
 const colors = ['#BC000A', '#E8B100', '#0095A5', '#008E2B'];
 
 const elements = [
-    { title: 'Terapia Intensiva com Protocolo PediaSuit', imageSrc: '4-fig-oferecemos.jpg' },
-    { title: 'Fisioterapia com protocolo Bobath', imageSrc: '7-fig-oferecemos.jpg' },
-    { title: 'Fonoaudiologia', imageSrc: '5-fig-oferecemos.jpg' },
-    { title: 'Musicoterapia', imageSrc: '6-fig-oferecemos.jpg' },
-    { title: 'Psicomotricidade', imageSrc: '8-fig-oferecemos.jpg' },
-    { title: 'Terapia Ocupacional', imageSrc: '9-fig-oferecemos.jpg' },
-    { title: 'Neuropsicopedagogia', imageSrc: '10-fig-oferecemos.jpg' },
-    { title: 'Psicologia Infantil', imageSrc: '11-fig-oferecemos.jpg' },
-    { title: 'Psicoterapia ABA', imageSrc: '12-fig-oferecemos.jpg' }
+    { title: 'Terapia Intensiva com Protocolo PediaSuit', imageSrc: '13-fig-oferecemos.png' },
+    { title: 'Fisioterapia com protocolo Bobath', imageSrc: '7-fig-oferecemos.png' },
+    { title: 'Fonoaudiologia', imageSrc: '10-fig-oferecemos.png' },
+    { title: 'Musicoterapia', imageSrc: '6-fig-oferecemos.png' },
+    { title: 'Psicomotricidade', imageSrc: '9-fig-oferecemos.png' },
+    { title: 'Terapia Ocupacional', imageSrc: '5-fig-oferecemos.png' },
+    { title: 'Neuropsicopedagogia', imageSrc: '8-fig-oferecemos.png' },
+    { title: 'Psicologia Infantil', imageSrc: '11-fig-oferecemos.png' },
+    { title: 'Psicoterapia ABA', imageSrc: '12-fig-oferecemos.png' }
 ];
 
 return (

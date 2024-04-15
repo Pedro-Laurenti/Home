@@ -4,7 +4,7 @@ import LayoutSubpage from '../components/LayoutSubpage';
 function PoliticaDePrivacidade() {
     const pageTitle = "Política de privacidade";
     const pageDescription = "Política de privacidade";
-    const title = "AQUI FICA O TÍTULO VARIÁVEL CONFORME A PÁGINA";
+    const title = "Política de privacidade";
     const image = "./15-capa-cookies.jpg";
     const bodyContent = (
         <>
