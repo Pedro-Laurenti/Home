@@ -1,11 +1,12 @@
 import LayoutSubpage from '../components/LayoutSubpage';
-
+import styles from '@styles/subpage.module.scss'
 
 function PoliticaDePrivacidade() {
     const pageTitle = "Política de privacidade";
     const pageDescription = "Política de privacidade";
     const title = "Política de privacidade";
-    const image = "./15-capa-cookies.png";
+    const image = '/15-capa-cookies.png'
+
     const bodyContent = (
         <>
             <p>A sua privacidade é importante para nós. É política do Therapies Love Kids respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a href="https://www.therapieslovekids.com.br">Therapies Love Kids</a>, e outros sites que possuímos e operamos.</p>
@@ -46,8 +47,8 @@ function PoliticaDePrivacidade() {
             pageTitle={pageTitle}
             pageDescription={pageDescription}
             title={title}
-            image={image}
             bodyContent={bodyContent}
+            image={image}
         />
     )
 }

@@ -1,11 +1,38 @@
 import LayoutSubpage from '../components/LayoutSubpage';
 import Tab from '@components/Tab';
+import styles from '@styles/subpage.module.scss'
 
-function PoliticaDePrivacidade() {
+ export default function Sobre() {
     const pageTitle = "Sobre nós";
     const pageDescription = "Política de privacidade";
     const title = "Sobre nós";
-    const image = "./16-capa-cookies.png";
+
+    const slidesSubpage = [
+        
+        
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(1).png'}/>
+        </div>,
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(2).png'}/>
+        </div>,
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(3).png'}/>
+        </div>,
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(4).png'}/>
+        </div>,
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(5).png'}/>
+        </div>,
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(6).png'}/>
+        </div>,
+        <div className={styles.wrapperImgSlider}>
+            <img src={'/sobre-nos(7).png'}/>
+        </div>,
+    ];
+
     const bodyContent = (
         <>
             <h1>Com o que trabalhamos?</h1>
@@ -80,10 +107,8 @@ function PoliticaDePrivacidade() {
             pageTitle={pageTitle}
             pageDescription={pageDescription}
             title={title}
-            image={image}
             bodyContent={bodyContent}
+            slidesSubpage={slidesSubpage}
         />
     )
 }
-
-export default PoliticaDePrivacidade;

@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import styles from './LayoutSubpage.module.scss';
 import Layout from '@components/Layout';
+import SliderSubpage from '@components/SliderSubpage';
 
-function LayoutSubpage({ pageTitle, pageDescription, title, image, bodyContent }) {
+function LayoutSubpage({ pageTitle, pageDescription, title, image, bodyContent, slidesSubpage }) {
     return (
         <Layout>
             <Head>
@@ -14,8 +15,8 @@ function LayoutSubpage({ pageTitle, pageDescription, title, image, bodyContent }
                 <div className={styles.contentsubpage1}>
                     <h1>{title}</h1>
                 </div>
-                <div className={styles.imgSubpage1} style={{ backgroundImage: `url(${image})` }}>
-                </div>
+                {slidesSubpage && <SliderSubpage slidesSubpage={slidesSubpage} className={styles.imgSubpage1} />}
+                {image && <div className={styles.imgSubpage1} style={{ backgroundImage: `url(${image})` }}></div>}
             </div>
 
             <div className={styles.CorpoSubpagina}>

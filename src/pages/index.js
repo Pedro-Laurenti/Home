@@ -108,10 +108,8 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Container>
           <h1>Perguntas frequentes</h1>
           <Accordion />
-        </Container>
         
         <NextLink href="/sobre" className={styles.btnEntenta}>
           <Button>
@@ -126,8 +124,8 @@ export default function Home() {
           <h1>Nossas unidades</h1>
           <Map
           center={Center}
-          zoom={9}
-          scrollWheelZoom={false}
+          zoom={8}
+          scrollWheelZoom={true}
           
           >
             {({ TileLayer, Marker, Popup }) => (
