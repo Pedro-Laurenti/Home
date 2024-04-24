@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Link , Element } from "react-scroll";
 
 import NextLink from 'next/link';
+import { useRef, useState, useEffect } from 'react';
 
 import Layout from '@components/Layout';
 import Section from '@components/Section';
@@ -84,6 +85,7 @@ const slides = [
 ];
 
 export default function Home() {
+
   return (
     <Layout>
       <Head>
@@ -123,19 +125,9 @@ export default function Home() {
         </Section>
       </Element>
 
-      <div className={styles.parte3}>
-        
-        <div className={styles.parte3back1}></div>
-        <div className={styles.parte3back2}></div>
 
-        <div className={styles.parte3wrapper}>
-          <h1>O que oferecemos?</h1>
-          <div className={styles.wrapperCellsPt3}>
-              <Grid />
-          </div>
-        </div>
+      <Grid />
 
-      </div>
 
       <Section>
           <h1>Perguntas frequentes</h1>
