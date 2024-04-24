@@ -32,6 +32,7 @@ return (
                     alt="a"
                     quality={80}
                     sizes="30vw"
+                    draggable="false"
                     />
                 </div>
             </div>

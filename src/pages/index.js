@@ -15,12 +15,39 @@ import Accordion from '@components/Accordion';
 import styles from '@styles/Home.module.scss';
 
 const Center = [-15.831363931968374, -48.613426638044366]
-const Marker1 = [-16.32624186589265, -48.95399414059945]
-const Marker2 = [-16.326484291107626, -48.93804352814849]
-const Marker3 = [-16.408290981950234, -49.217718345807526]
-const Marker4 = [-15.715403578121949, -49.32930504699492]
-const Marker5 = [-15.849428385464458, -48.03904422994031]
-const Marker6 = [-15.326978438580792, -49.13540008084957]
+const markers = [
+  { 
+    name: '1', 
+    coordinates: [-16.32624186589265, -48.95399414059945],
+    description: 'Unidade Sede e Transdisciplinar (Centro)'
+  },
+  { 
+    name: '2', 
+    coordinates: [-16.326484291107626, -48.93804352814849],
+    description: 'Unidade Multidisciplinar (Jundiai)'
+  },
+  { 
+    name: '3', 
+    coordinates: [-16.408290981950234, -49.217718345807526],
+    description: 'Unidade Nerópolis'
+  },
+  { 
+    name: '4', 
+    coordinates: [-15.715403578121949, -49.32930504699492],
+    description: 'Unidade Jaraguá'
+  },
+  { 
+    name: '5', 
+    coordinates: [-15.849428385464458, -48.03904422994031],
+    description: 'Unidade Taguatinga'
+  },
+  { 
+    name: '6', 
+    coordinates: [-15.326978438580792, -49.13540008084957],
+    description: 'Unidade Goianésia'
+  }
+];
+
 
 const slides = [
   <div className={styles['slider-cell']}>
@@ -96,16 +123,19 @@ export default function Home() {
         </Section>
       </Element>
 
-      <Section>
-        <Container>
+      <div className={styles.parte3}>
+        
+        <div className={styles.parte3back1}></div>
+        <div className={styles.parte3back2}></div>
+
+        <div className={styles.parte3wrapper}>
           <h1>O que oferecemos?</h1>
-          <div className={styles.parte3}>
-            <div className={styles.wrapperCellsPt3}>
-                <Grid />
-            </div>
+          <div className={styles.wrapperCellsPt3}>
+              <Grid />
           </div>
-        </Container>
-      </Section>
+        </div>
+
+      </div>
 
       <Section>
           <h1>Perguntas frequentes</h1>
@@ -134,36 +164,13 @@ export default function Home() {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   
                 />
-                <Marker position={Marker1}>
-                  <Popup>
-                    Unidade Sede e Transdisciplinar (Centro)
-                  </Popup>
-                </Marker>
-                <Marker position={Marker2}>
-                  <Popup>
-                    Unidade Multidisciplinar (Jundiai)
-                  </Popup>
-                </Marker>
-                <Marker position={Marker3}>
-                  <Popup>
-                    Unidade Nerópolis
-                  </Popup>
-                </Marker>
-                <Marker position={Marker4}>
-                  <Popup>
-                    Unidade Jaraguá
-                  </Popup>
-                </Marker>
-                <Marker position={Marker5}>
-                  <Popup>
-                    Unidade Taguatinga
-                  </Popup>
-                </Marker>
-                <Marker position={Marker6}>
-                  <Popup>
-                    Unidade Goianésia
-                  </Popup>
-                </Marker>
+                {markers.map((marker, index) => (
+                    <Marker key={index} position={{ lat: marker.coordinates[0], lng: marker.coordinates[1] }}>
+                        <Popup>
+                            {`Unidade ${marker.description}`}
+                        </Popup>
+                    </Marker>
+                ))}
               </>
             )}
           </Map>
