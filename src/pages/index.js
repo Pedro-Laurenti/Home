@@ -113,7 +113,7 @@ export default function Home() {
         
         <NextLink href="/sobre" className={styles.btnEntenta}>
           <Button>
-              Entenda com o que trabalhamos
+              Mais dúvidas?
           </Button>
         </NextLink>
         

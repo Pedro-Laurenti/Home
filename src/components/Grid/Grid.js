@@ -8,12 +8,12 @@ const colors = ['#BC000A', '#E8B100', '#0095A5', '#008E2B'];
 
 const elements = [
     { title: 'Terapia Intensiva com Protocolo PediaSuit', imageSrc: '/13-fig-oferecemos.png' }, /*  */
-    { title: 'Fisioterapia com protocolo Bobath', imageSrc: '/7-1-fig-oferecemos.png' }, /* 7-fig-oferecemos.png */
+    { title: 'Fisioterapia com protocolo Bobath', imageSrc: '/7-1-fig-oferecemos.png' },
     { title: 'Fonoaudiologia', imageSrc: '/10-fig-oferecemos.png' },
     { title: 'Musicoterapia', imageSrc: '/6-fig-oferecemos.png' },
     { title: 'Psicomotricidade', imageSrc: '/9-fig-oferecemos.png' },
     { title: 'Terapia Ocupacional', imageSrc: '/12-fig-oferecemos.png' },
-    { title: 'Neuropsicopedagogia', imageSrc: '/8-1-fig-oferecemos.png' },
+    { title: 'Neuropsicopedagogia', imageSrc: '/8-1-fig-oferecemos.png' }, /* a */
     { title: 'Psicologia Infantil', imageSrc: '/11-fig-oferecemos.png' },
     { title: 'Psicoterapia ABA', imageSrc: '/5-fig-oferecemos.png' }
 ];

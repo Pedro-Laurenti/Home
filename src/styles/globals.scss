@@ -88,12 +88,12 @@ p{
 /* BARRA DE ROLAGEM */
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track {
     background: var(--BL4);
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -102,7 +102,7 @@ p{
 }
 
 ::-moz-scrollbar {
-    width: 8px;
+    width: 1px;
 }
 
 ::-moz-scrollbar-track {

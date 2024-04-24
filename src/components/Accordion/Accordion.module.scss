@@ -8,40 +8,49 @@
     & .accordion {
         border-radius: 15px;
         overflow: hidden;
-        width: 90%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    
+        
+        .tab{
+            width: 100%;
+
+            input {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+            
+                &:checked ~ .tab__content{
+                    max-height: 1500px;
+                    overflow-y: scroll;
+                    border: 2px solid var(--B1);
+                    border-radius:15px;
+                }
+            
+                &:checked + .tab__label::after {
+                    transform: rotate(270deg);
+                    margin-right: 5px;
+                }
+            
+                &:checked + .tab__label{
+                    background: var(--B1);
+                    color: var(--BL3);
+                }
+            
+            }
+        }
+
+    
+    
+    
+    
     }
 }
+
 
 /* Core styles/functionality */
-.tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-
-    &:checked ~ .tab__content{
-        max-height: 1500px;
-        overflow-y: scroll;
-        border: 2px solid var(--B1);
-        border-radius:15px;
-    }
-
-    &:checked + .tab__label::after {
-        transform: rotate(270deg);
-        margin-right: 5px;
-    }
-
-    &:checked + .tab__label{
-        background: var(--B1);
-        color: var(--BL3);
-    }
-
-    &:not(:checked) + .tab__label:hover::after {
-        animation: bounce .5s infinite;
-    }
-}
 
 /* Visual styles */
 
