@@ -159,7 +159,7 @@ export default function Home() {
                 {markers.map((marker, index) => (
                     <Marker key={index} position={{ lat: marker.coordinates[0], lng: marker.coordinates[1] }}>
                         <Popup>
-                            {`Unidade ${marker.description}`}
+                            {`${marker.description}`}
                         </Popup>
                     </Marker>
                 ))}
