@@ -42,6 +42,9 @@ const Header = () => {
           <Link href="/">
             <h3 className={pathname === "/" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Início</h3>
           </Link>
+          <Link href="https://artigos.therapieslovekids.com">
+            <h3 className={styles.pageLink}>Artigos</h3>
+          </Link>
           <Link href="/sobre">
             <h3 className={pathname === "/sobre" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Sobre nós</h3>
           </Link>
@@ -52,6 +55,9 @@ const Header = () => {
         <div className={styles.mobileMenu}>
           <Link href="/">
             <h3 className={pathname === "/" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Início</h3>
+          </Link>
+          <Link href="https://artigos.therapieslovekids.com">
+            <h3 className={styles.pageLink}>Artigos</h3>
           </Link>
           <Link href="/sobre">
             <h3 className={pathname === "/sobre" ? `${styles.pageActive} ${styles.pageLink}` : styles.pageLink}>Sobre nós</h3>

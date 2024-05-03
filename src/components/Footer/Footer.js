@@ -33,7 +33,7 @@ const Footer = ({ ...rest }) => {
           <h2>Páginas</h2>        
           <ul>
             <Link href="/"><h3>Início</h3></Link>
-            <Link href="https://blog.therapieslovekids.com"><h3>Blog</h3></Link>
+            <Link href="https://artigos.therapieslovekids.com"><h3>Artigos</h3></Link>
             <Link href="/sobre"><h3>Sobre nós</h3></Link>
             
           </ul>

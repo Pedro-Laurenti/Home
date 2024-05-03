@@ -5,20 +5,20 @@
   width: 100%;
   position: relative;
 
-
   & .footPt1 {
-    background: linear-gradient(135deg, #171E46 0%, #3948A1 100%);
+    background: linear-gradient(135deg, #25283e 0%, #2b4852 100%);
     padding: 25px;
     display: grid;
     grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
-    align-items: center;
+    align-items:start;
     justify-items: center;
     width: 100%;
 
-
     @media (max-width: 1100px) {
       grid-template-columns: 1fr;
-      gap: 25px;
+      padding: 0 10vw;
+      justify-items: baseline;
+      gap: 80px;
     }
 
     & .footIcons{
@@ -37,16 +37,16 @@
     }
     & .footPages{
       & h2{
-        color: var(--B1);
+        color: var(--BL4);
         margin-bottom: 5px;
       }
 
       & ul h3{
-        margin: 2px 0 0 -20px;
+        margin: 5px 0 0 -20px;
         color: var(--BL4);
 
         &:hover{
-          color: var(--BL2);
+          color: var(--B1);
         }
       }
     }
