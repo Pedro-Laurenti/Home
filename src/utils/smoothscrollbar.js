@@ -7,7 +7,7 @@ const SmoothScrollbar = ({ children }) => {
   useEffect(() => {
     if (scrollbarRef.current) {
       const options = {
-        damping: 0.1,
+        damping: 0.4,
       };
 
       const scrollbar = Scrollbar.init(scrollbarRef.current, options);
