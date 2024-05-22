@@ -1,7 +1,7 @@
 {
   "name": "tlk_site",
   "homepage": "https://therapieslovekids.com",
-  "version": "20.8",
+  "version": "20.9",
   "license": "MIT",
   "author": "Pedro Laurenti",
   "scripts": {
@@ -33,6 +33,7 @@
     "react-slick": "^0.30.2",
     "sass": "^1.69.5",
     "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.8.4",
     "yarn": "^1.22.22"
   }
 }
