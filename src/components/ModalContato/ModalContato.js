@@ -50,11 +50,9 @@ const ModalContato = ({ isOpen, onClose }) => {
           </div>
 
           <div classname={styles.cellColumn}>
-            <h3><b>Goianésia:</b></h3>
-              <section>
-                <img src='./4-icon-new-popup.svg'></img>
-                <p>Em breve!</p>
-              </section>
+              <h3><b>Goianésia:</b></h3>
+              <p>jaragua@therapieslovekids.com.br</p>
+              <p>R. João Pedro de Oliveira, 27 - Qd 02 Lt 07 - Setor Aeroporto, Jaraguá - GO, 76330-000</p>
           </div>
 
         </div>
