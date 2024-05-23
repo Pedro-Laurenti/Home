@@ -21,6 +21,10 @@
     --BL4-T: #fefefe6b;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 *{
     font-family: "Montserrat", sans-serif;
     margin: 0;

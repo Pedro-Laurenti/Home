@@ -1,17 +1,11 @@
 import Link from 'next/link';
-import { Parallax } from 'react-parallax';
-
-
-import { FaYoutube } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaTiktok } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-
+import { FaYoutube, FaTwitter, FaTiktok, FaInstagram    } from 'react-icons/fa';
+import config from '../../../package.json';
 import styles from './Footer.module.scss';
 
-
-
 const Footer = ({ ...rest }) => {
+
+  const CURRENT_YEAR = new Date().getFullYear();
 
   return (
     <footer className={styles.footer} {...rest}>
@@ -51,7 +45,8 @@ const Footer = ({ ...rest }) => {
 
       </div>
       <div className={styles.footPt2}>
-        <h6>COPYRIGHT THERAPIES LOVE KIDS 2024. TODOS OS DIREITOS RESERVADOS.</h6>
+        <h6>&copy; {CURRENT_YEAR} Therapies Love Kids. Todos os direitos reservados.</h6>
+        <h6>v. {config.version}</h6>
       </div>
     </footer>
   );

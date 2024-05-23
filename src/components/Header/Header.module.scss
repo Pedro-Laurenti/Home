@@ -2,6 +2,7 @@
   width: 100%;
   background-color: var(--BL4);
   position: relative;
+  transition: background 0.3s ease;
 
   .iconMobile {
     display: none;
